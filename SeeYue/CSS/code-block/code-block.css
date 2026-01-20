@@ -13,6 +13,9 @@
     box-shadow: var(--code-block-shadow);
     border: var(--code-block-border);
     border-radius: var(--code-block-bg-radius) !important;
+    /* 设置 tab 显示宽度 */
+    tab-size: 4 !important;
+    -moz-tab-size: 4 !important;
 }
 
 /* 增大相邻代码块间距，防止代码块语言输入框挡住下方代码块 */
@@ -29,6 +32,9 @@
     font-size: var(--code-block-text-size);
     /* 使得鼠标悬浮在滚轮上的样式与悬浮在其他地方的不同 */
     cursor: auto;
+    /* 设置 tab 显示宽度为 4 个空格（Go 代码标准） */
+    tab-size: 4;
+    -moz-tab-size: 4;
 }
 
 /* 代码块行号 */
@@ -65,14 +71,14 @@
     border: none !important;
     margin: 0;
     padding: 1px 0;
-    font-family: "霞鹜文楷", "霞鹜文楷";
+    font-family: "霞鹜文楷", "霞鹜文楷", serif;
     min-width: var(--code-lang-input-selection-box-width);
     background-color: var(--code-lang-input-selection-box-bg-color);
 }
 
 /* 插入代码后弹出的语言候选框 */
 .auto-suggest-container {
-    font-family: "霞鹜文楷", "霞鹜文楷";
+    font-family: "霞鹜文楷", "霞鹜文楷", serif;
     width: var(--code-lang-input-selection-box-width);
     background-color: var(--code-lang-input-selection-box-bg-color);
     border-radius: 3px;
@@ -96,7 +102,7 @@
 
 /* 语言候选框内部文字 */
 .auto-suggest-container ul {
-    font-family: "霞鹜文楷";
+    font-family: "霞鹜文楷", serif;
     padding: 0 5px;
     font-size: var(--code-lang-selection-box-text-size);
 }
@@ -115,12 +121,6 @@
 
 /* 以下代码只在 Typora 界面生效 */
 @media screen {
-
-    /* 光标所在行背景色 - 已禁用 */
-    /* .md-fences.md-focus .cm-s-inner .CodeMirror-activeline-background, */
-    /* .md-fences.md-focus .CodeMirror-code>div.CodeMirror-activeline { */
-    /*   background: var(--focus-code-line-bg-color); */
-    /* } */
     /* 代码块行横向滚轮 */
     #write pre.md-fences .CodeMirror-wrap .CodeMirror-code pre {
         overflow-x: var(--code-block-lines-horizontal-overflow-x) !important;
