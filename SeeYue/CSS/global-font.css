@@ -6,7 +6,7 @@
 /* 全局英文字体 */
 @font-face {
     font-family: "Global_EN_Font";
-    src: url("../Fonts/English-Fonts/HarmonyOS_Sans_Regular.woff2");
+    src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
     font-display: swap;
 }
 
@@ -20,14 +20,14 @@
 /* 标题、加粗 */
 @font-face {
     font-family: "HarmonyOS-Bold";
-    src: url("../Fonts/common-fonts/HarmonyOS_Sans_SC_Bold.woff2");
+    src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
     font-display: swap;
 }
 
 /* 斜体、列表符号 */
 @font-face {
     font-family: "HarmonyOS-Regular";
-    src: url("../Fonts/common-fonts/HarmonyOS_Sans_SC_Regular.woff2");
+    src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
     font-display: swap;
 }
 
