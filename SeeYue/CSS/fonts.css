@@ -1,110 +1,43 @@
 /* 本文件为字体引用设置 */
 /* ================================================================= */
 
-
-/* ——————————————————————————————— 中文字体 ——————————————————————————————— */
-/* 目录中文 */
+/* ——————————————————————————————— 统一字体定义 ——————————————————————————————— */
+/* 霞鹜文楷 - 优先使用系统已安装的字体 */
 @font-face {
     font-family: "霞鹜文楷";
-    src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
-    font-display: swap;
+    /* 优先使用系统已安装的字体，常见的字体名称变体 */
+    src: local("霞鹜文楷"),
+         local("LXGW WenKai Screen"),
+         local("LXGWWenKaiScreen"),
+         local("霞鹜文楷屏幕阅读版"),
+         /* 如果系统没有安装，才加载本地字体文件 */
+         url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2") format("woff2");
+    font-display: swap; /* 使用系统字体先渲染，字体加载完成后再替换 */
 }
 
-/* 侧边栏、右键菜单、底部栏、引用块、代码块、脚注 */
-@font-face {
-    font-family: "霞鹜文楷";
-    src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
-    font-display: swap;
-}
-
-/* 标题、加粗 */
-@font-face {
-    font-family: "霞鹜文楷";
-    src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
-    font-display: swap;
-}
-
-/* 正文中文 */
-@font-face {
-    font-family: "霞鹜文楷";
-    src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
-    font-display: swap;
-}
-
-/* 标点符号 */
-@font-face {
-    font-family: "霞鹜文楷";
-    src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
-    font-display: swap;
-}
-
-/* ——————————————————————————————— 英文字体 ——————————————————————————————— */
-@font-face {
-    font-family: "霞鹜文楷";
-    src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "霞鹜文楷";
-    src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
-}
-
-/* 行间代码 */
-@font-face {
-    font-family: "霞鹜文楷";
-    src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
-}
-
-/* 右键菜单英文 */
-@font-face {
-    font-family: "霞鹜文楷";
-    src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
-}
-
-/* 引用块、侧边栏、正文英文 */
-@font-face {
-    font-family: "霞鹜文楷";
-    src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
-    font-display: swap;
-}
-
-/* Typora 默认显示 HTML 代码的字体 */
-@font-face {
-    font-family: "霞鹜文楷";
-    src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
-}
-
-/* —————————————————————————————————————————— 简化字体 —————————————————————————————————————————— */
+/* ——————————————————————————————— 图标字体 ——————————————————————————————— */
 /* 链接尾部图标 */
 @font-face {
     font-family: "ITS";
-    src: url("../Fonts/icon_font/its.woff");
-    font-display: swap;
-}
-
-/* 只能显示 脚注文件大纲查找 */
-@font-face {
-    font-family: "霞鹜文楷";
-    src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
+    src: url("../Fonts/icon_font/its.woff") format("woff");
     font-display: swap;
 }
 
 /* 字体图标 */
 @font-face {
     font-family: "iconfont";
-    src: url("../Fonts/icon_font/iconfont.woff2") format("truetype");
+    src: url("../Fonts/icon_font/iconfont.woff2") format("woff2");
     font-display: swap;
 }
 
 /* H1 → H6 标题等级提示符号 */
 @font-face {
     font-family: "remixicon";
-    src: url("../Fonts/icon_font/remixicon.woff2") format("truetype");
+    src: url("../Fonts/icon_font/remixicon.woff2") format("woff2");
     font-display: swap;
 }
 
-/* 下面是图标名 */
+/* 图标样式类 */
 .iconfont {
     font-family: "iconfont", serif !important;
     font-size: 16px;
