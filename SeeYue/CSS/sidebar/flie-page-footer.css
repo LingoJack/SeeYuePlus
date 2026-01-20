@@ -101,6 +101,7 @@
 #sidebar-files-menu.dropdown-menu>li>a {
   font-family: var(--sidebar-text-font) !important;
   color      : var(--sidebar-text-color) !important;
+  transition : all .3s ease;
 }
 
 #ty-sidebar-footer #sidebar-files-menu li {
@@ -111,6 +112,7 @@
   background-color: var(--hover-footer-files-menu-line-bg-color) !important;
   border-radius   : 3px;
   transition      : all .3s ease;
+  transform       : translateX(6px);
 }
 
 /* 「操作」文字 */
