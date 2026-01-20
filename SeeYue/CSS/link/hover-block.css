@@ -13,10 +13,8 @@ span:is([md-inline="link"], [md-inline="url"]).md-link {
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
     /* 使用 background 实现块底纹，支持跨行 */
-    background: linear-gradient(var(--hover-link-bg-top-color), var(--hover-link-bg-bottom-color));
     background-size: 100% 0%;
-    background-repeat: no-repeat;
-    background-position: center bottom;
+    background: linear-gradient(var(--hover-link-bg-top-color), var(--hover-link-bg-bottom-color)) no-repeat center bottom;
     transition: background-size .3s linear;
     /* 添加内边距使背景更美观 */
     padding: 1px 2px;
