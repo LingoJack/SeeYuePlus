@@ -38,7 +38,7 @@ blockquote :is(ol, ul) li p {
 
 /* 有序列表前符号 */
 #write ol li::marker {
-    font-family: "HarmonyOS-Regular";
+    font-family: "霞鹜文楷";
     font-size: var(--orderly-list-symbol-size);
     color: var(--orderly-list-symbol-color);
 }

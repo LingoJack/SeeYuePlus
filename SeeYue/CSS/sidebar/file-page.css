@@ -234,7 +234,7 @@
 
 /* 文件名称 */
 #file-library-list-children .file-list-item .file-list-item-file-name-part {
-    font-family: "HarmonyOS-Bold";
+    font-family: "霞鹜文楷";
     color: var(--filelist-filename-text-color);
 }
 

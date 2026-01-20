@@ -23,7 +23,7 @@
     /* 界面默认背景颜色 */
     --interface-default-bg-color: #eaefef80;
     /* 界面写作区域文本字体 */
-    --writeArea-text-font: "Zhudou", "HarmonyOS-Sans", "HarmonyOS-Regular";
+    --writeArea-text-font: "霞鹜文楷", "霞鹜文楷", "霞鹜文楷";
     /* 界面写作区域文本颜色 */
     --writeArea-text-color: #111;
     /* 界面写作区域文本大小 */
@@ -104,7 +104,7 @@
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━ 正文标题（headline.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
 :root {
     /* 标题字体 */
-    --all-headline-font: "HarmonyOS-Bold";
+    --all-headline-font: "霞鹜文楷";
 
     /* 标题文本颜色 */
     --h1-color: #f87759;
@@ -149,13 +149,13 @@
 
     /* ======================== 目录标题设置 ======================== */
     /* 1 级标题文本字体 */
-    --contents-h1-font: "HarmonyOS-Bold";
+    --contents-h1-font: "霞鹜文楷";
     /* 1 级标题文本颜色 */
     --contents-h1-color: #000;
     /* 1 级标题文本大小 */
     --contents-h1-size: 1rem;
     /* 2 ~ 6 级标题文本字体 */
-    --contents-h2-to-h6-font: "HarmonyOS-Sans", "玄宋45S";
+    --contents-h2-to-h6-font: "霞鹜文楷", "霞鹜文楷";
     /* 2 ~ 6 级标题文本字体 */
     --contents-h2-to-h6-color: #003172;
     /* 2 ~ 6 级标题文本字体 */
@@ -175,7 +175,7 @@
     /* 目录顶部文本内容 */
     --contents-top-text: "Contents";
     /* 目录顶部文本字体 */
-    --contents-top-text-font: "Lora-Bold";
+    --contents-top-text-font: "霞鹜文楷";
     /* 目录顶部文本颜色 */
     --contents-top-text-color: #396caf;
     /* 目录顶部文本大小 */
@@ -204,14 +204,14 @@
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━ 行内文本样式（inline-element.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
 :root {
     /* 加粗文本字体 */
-    --bold-text-font: "HarmonyOS-Bold";
+    --bold-text-font: "霞鹜文楷";
     /* 加粗文本颜色 */
     --bold-text-color: #000;
     /* 加粗文本大小 */
     --bold-text-size: inherit;
 
     /* 斜体文本字体 */
-    --italic-text-font: "HarmonyOS-Regular";
+    --italic-text-font: "霞鹜文楷";
     /* 斜体文本大小 */
     --italic-text-size: inherit;
 
@@ -224,7 +224,7 @@
     --text-bottom-border-distance: 1px;
 
     /* 行内代码字体 */
-    --line-code-font: "Fira", "霞鹜文楷";
+    --line-code-font: "霞鹜文楷", "霞鹜文楷";
     /* 行内代码颜色 */
     --line-code-color: #f5872e;
     /* 行内代码大小 */
@@ -399,7 +399,7 @@
     --table-cell-min-width: 120px;
 
     /* 表头字体 */
-    --table-thead-text-font: "HarmonyOS-Bold";
+    --table-thead-text-font: "霞鹜文楷";
     /* 表头字体颜色 */
     --table-thead-text-color: #fff;
     /* 表头背景色 */
@@ -505,7 +505,7 @@
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━ 引用块样式（blockquote.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
 :root {
     /* 引用块文本字体 */
-    --blockquote-text-font: "HarmonyOS-Sans", "霞鹜文楷";
+    --blockquote-text-font: "霞鹜文楷", "霞鹜文楷";
     /* 引用块文本颜色 */
     --blockquote-text-color: #999;
     /* 引用块文本大小 */
@@ -530,7 +530,7 @@
 
     /* ======================== Admonitions 引用块 ======================== */
     /* 引用样式块标题字体 */
-    --admonitions-blockquote-title-font: "HarmonyOS-Bold";
+    --admonitions-blockquote-title-font: "霞鹜文楷";
     /* 引用样式块标题大小 */
     --admonitions-blockquote-title-size: 1.1rem;
     /* 引用样式块标题与文本的间距 */
@@ -752,7 +752,7 @@
 
     /* ======================== 文末脚注设置 ======================== */
     /* 文末脚注内容字体 */
-    --end-footnote-area-font: "HarmonyOS-Sans", "霞鹜文楷";
+    --end-footnote-area-font: "霞鹜文楷", "霞鹜文楷";
     /* 文末脚注内容大小 */
     --end-footnote-area-text-size: .8rem;
     /* 文末脚注内容颜色 */
@@ -763,7 +763,7 @@
     /* 文末脚注内容区域提示文字 */
     --end-footnote-area-prompt-content: "Footnotes";
     /* 文末脚注内容区域提示文字字体 */
-    --end-footnote-area-prompt-content-font: "HarmonyOS-Bold";
+    --end-footnote-area-prompt-content-font: "霞鹜文楷";
     /* 文末脚注内容区域提示文字大小 */
     --end-footnote-area-prompt-content-size: 10px;
     /* 文末脚注内容区域提示文字颜色 */
@@ -787,7 +787,7 @@
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━ 侧边栏整体设置（sidebar.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
 :root {
     /* 侧边栏文本字体 */
-    --sidebar-text-font: "HarmonyOS-Sans", "霞鹜文楷";
+    --sidebar-text-font: "霞鹜文楷", "霞鹜文楷";
     /* 侧边栏文字颜色 */
     --sidebar-text-color: #555;
     /* 侧边栏文字大小 */
@@ -1152,7 +1152,7 @@
     /* 右键菜单背景色 */
     --context-menu-bg-color: #fff;
     /* 右键菜单内文本字体 */
-    --context-menu-text-font: "RobotoMono", "霞鹜文楷";
+    --context-menu-text-font: "霞鹜文楷", "霞鹜文楷";
     /* 右键菜单内文本颜色 */
     --context-menu-text-color: #333;
     /* 右键菜单内文本大小 */
@@ -1190,7 +1190,7 @@
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━ 底部栏设置（footer.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
 :root {
     /* 底部栏文本字体 */
-    --footer-text-font: "HarmonyOS-Sans", "霞鹜文楷";
+    --footer-text-font: "霞鹜文楷", "霞鹜文楷";
     /* 底部栏文本颜色 */
     --footer-text-color: #777;
     /* 底部栏文本大小 */
@@ -1255,7 +1255,7 @@
     /* 写作区域搜索面板背景色 */
     --writeArea-search-panel-bg-color: #dbe3e3;
     /* 写作区域搜索面板文本字体 */
-    --writeArea-search-panel-text-font: "HarmonyOS-Sans", "霞鹜文楷";
+    --writeArea-search-panel-text-font: "霞鹜文楷", "霞鹜文楷";
     /* 写作区域搜索面板文本大小 */
     --writeArea-search-panel-text-size: 13px;
     /* 写作区域搜索面板文本颜色 */

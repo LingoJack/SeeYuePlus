@@ -161,7 +161,7 @@
 /* 字符统计菜单标题行 */
 #footer-word-count-info .footer-word-count-info-line {
     font-size: var(--word-count-panel-headline-size);
-    font-family: "HarmonyOS-Bold";
+    font-family: "霞鹜文楷";
     color: var(--word-count-panel-headline-color);
 }
 

@@ -125,7 +125,7 @@ table tr :is(th, td) .td-span {
 
 /* ———————————————————————————— 工具栏 ———————————————————————————— */
 .ty-table-edit {
-    font-family: "HarmonyOS-Bold";
+    font-family: "霞鹜文楷";
     /* 调整高度 */
     transform: var(--table-edit-panel-position);
     z-index: 99;
@@ -221,7 +221,7 @@ table tr :is(th, td) .td-span {
 
 /* 表格工具栏（三个小点） */
 .md-table-edit button.md-table-more {
-    font-family: "HarmonyOS-Sans", "霞鹜文楷";
+    font-family: "霞鹜文楷", "霞鹜文楷";
     position: relative;
     left: -15px;
     padding: 3px 0;
@@ -351,7 +351,7 @@ table tr :is(th, td) .td-span {
 
 /* 【列 × 行】数字栏数字 */
 .md-grid-board-wrap input {
-    font-family: "HarmonyOS-Bold";
+    font-family: "霞鹜文楷";
     font-size: 14px;
     color: var(--writeArea-text-color);
     width: var(--resize-menu-bottom-number-border-width);

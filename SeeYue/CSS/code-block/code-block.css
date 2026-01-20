@@ -35,7 +35,7 @@
 #write .CodeMirror-linenumber {
     text-align: var(--code-block-line-number-align-style);
     color: var(--code-block-line-number-color);
-    font-family: "HarmonyOS-Sans";
+    font-family: "霞鹜文楷";
     font-size: var(--code-block-text-size);
     padding: 0 0 0 6px;
     top: 0;
@@ -65,14 +65,14 @@
     border: none !important;
     margin: 0;
     padding: 1px 0;
-    font-family: "Fira", "霞鹜文楷";
+    font-family: "霞鹜文楷", "霞鹜文楷";
     min-width: var(--code-lang-input-selection-box-width);
     background-color: var(--code-lang-input-selection-box-bg-color);
 }
 
 /* 插入代码后弹出的语言候选框 */
 .auto-suggest-container {
-    font-family: "Fira", "霞鹜文楷";
+    font-family: "霞鹜文楷", "霞鹜文楷";
     width: var(--code-lang-input-selection-box-width);
     background-color: var(--code-lang-input-selection-box-bg-color);
     border-radius: 3px;
@@ -96,7 +96,7 @@
 
 /* 语言候选框内部文字 */
 .auto-suggest-container ul {
-    font-family: "Fira";
+    font-family: "霞鹜文楷";
     padding: 0 5px;
     font-size: var(--code-lang-selection-box-text-size);
 }

@@ -24,7 +24,7 @@ pre.md-fences:before {
 
 /* 代码语言显示【右侧】 */
 #write pre::after {
-    font-family: "HarmonyOS-Sans";
+    font-family: "霞鹜文楷";
     font-weight: bolder;
     font-size: var(--code-block-topBar-right-program-lang-size);
     color: var(--code-block-topBar-right-program-lang-color);

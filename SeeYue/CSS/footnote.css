@@ -4,7 +4,7 @@
 
 /* —————————————————————————————— 正文脚注 —————————————————————————————— */
 #write .md-footnote {
-    font-family: "HarmonyOS-Regular";
+    font-family: "霞鹜文楷";
     font-size: var(--writeArea-footnote-size);
     background-color: var(--writeArea-footnote-bg-color);
     color: var(--writeArea-footnote-color);
@@ -16,7 +16,7 @@
 #write .md-footnote > .md-text::before,
 #write .md-footnote > .md-text::after {
     display: var(--writeArea-footnote-text-brackets-state);
-    font-family: "Fira";
+    font-family: "霞鹜文楷";
     color: var(--writeArea-footnote-text-brackets-color);
     font-size: var(--writeArea-footnote-text-brackets-size);
 }
@@ -36,7 +36,7 @@
 #write .md-footnote.md-expand .md-after {
     opacity: 1;
     color: var(--focus-footnote-default-prompt-symbol-color);
-    font-family: "Fira";
+    font-family: "霞鹜文楷";
 }
 
 /* 调整脚注位置 */
@@ -52,7 +52,7 @@
     padding: 0;
     box-shadow: none;
     min-width: 50px;
-    font-family: "HarmonyOS-Sans", "霞鹜文楷";
+    font-family: "霞鹜文楷", "霞鹜文楷";
     opacity: 1;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 25%);
 }
@@ -83,7 +83,7 @@
 /* —————————————————————————————— 脚注内容 —————————————————————————————— */
 #write .md-def-footnote {
     font-size: var(--end-footnote-area-text-size);
-    font-family: "HarmonyOS-Sans", "霞鹜文楷" !important;
+    font-family: "霞鹜文楷", "霞鹜文楷" !important;
     color: var(--end-footnote-area-text-color);
     opacity: 1;
     position: relative;

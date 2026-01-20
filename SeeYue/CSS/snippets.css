@@ -60,7 +60,7 @@
 }
 
 .md-rawblock-tooltip {
-    font-family: "HarmonyOS-Sans", "HarmonyOS-Regular";
+    font-family: "霞鹜文楷", "霞鹜文楷";
 }
 
 /* 右上角「公式」二字 */
@@ -147,7 +147,7 @@ hr {
 
 /* 鼠标悬浮在按钮上弹出的悬浮框 */
 .ty-tooltip {
-    font-family: "Fira", "霞鹜文楷";
+    font-family: "霞鹜文楷", "霞鹜文楷";
     background-color: var(--btn-tooltip-bg-color);
     color: var(--btn-tooltip-text-color);
     opacity: 1;
@@ -177,7 +177,7 @@ hr {
 /* 弹出菜单标题 */
 .modal-content .modal-header .modal-title {
     font-size: 1.05rem;
-    font-family: "HarmonyOS-Bold";
+    font-family: "霞鹜文楷";
 }
 
 /* 弹出菜单主体 */
@@ -189,7 +189,7 @@ hr {
 .modal-content .modal-body .input-group-addon:first-child,
 .modal-content .modal-body .input-group-addon:last-child {
     border-radius: 0;
-    font-family: "HarmonyOS-Bold";
+    font-family: "霞鹜文楷";
     font-size: 1rem;
     font-weight: light;
 }
@@ -202,7 +202,7 @@ hr {
     border-radius: 4px;
     width: 55%;
     text-align: center;
-    font-family: 'HarmonyOS-Regular';
+    font-family: '霞鹜文楷';
     font-size: .9rem;
     padding: 0 2px;
     height: 30px;

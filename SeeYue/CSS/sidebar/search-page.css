@@ -91,7 +91,7 @@
 
 /* 文件名 */
 .ty-search-item-summary .file-list-item-file-name .file-list-item-file-name-part {
-    font-family: "HarmonyOS-Bold";
+    font-family: "霞鹜文楷";
     color: var(--sidebar-search-result-list-filename-color);
 }
 
@@ -160,7 +160,7 @@
     color: var(--search-result-list-lines-expend-btn-content-color);
     background-color: var(--search-result-list-lines-expend-btn-content-bg-color);
     font-size: var(--search-result-list-lines-expend-btn-content-size);
-    font-family: "HarmonyOS-Bold";
+    font-family: "霞鹜文楷";
     font-weight: normal;
     padding: 2px 4px;
     border-radius: 3px;

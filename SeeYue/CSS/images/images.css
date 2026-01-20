@@ -28,7 +28,7 @@ img {
 /* 图片链接文字 */
 .md-image > .md-meta {
     border-radius: 3px;
-    font-family: "Fira", "霞鹜文楷";
+    font-family: "霞鹜文楷", "霞鹜文楷";
     padding: 2px 0 0 4px;
     font-size: var(--image-link-text-size);
     color: var(--image-link-text-color);
@@ -107,7 +107,7 @@ p > .md-img-loaded[data-src*="https"]::before {
     width: 100%;
     display: inline-block;
     font-size: 12px;
-    font-family: "HarmonyOS-Sans", "霞鹜文楷";
+    font-family: "霞鹜文楷", "霞鹜文楷";
 }
 
 /* 链接图片 */

@@ -19,14 +19,14 @@
 
 /* 标题、加粗 */
 @font-face {
-    font-family: "HarmonyOS-Bold";
+    font-family: "霞鹜文楷";
     src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
     font-display: swap;
 }
 
 /* 斜体、列表符号 */
 @font-face {
-    font-family: "HarmonyOS-Regular";
+    font-family: "霞鹜文楷";
     src: url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
     font-display: swap;
 }

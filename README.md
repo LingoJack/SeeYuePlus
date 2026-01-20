@@ -71,23 +71,23 @@
                ├── HarmonyOS_Sans_SC_Bold.woff2
                ├── HarmonyOS_Sans_SC_Regular.woff2
                ├── LXGWWenKaiScreen.woff2
-               └── Zhudou.Sans-VF.ttf
+               └── 霞鹜文楷.Sans-VF.ttf
           ├── English-Fonts
-               ├── FiraCode-Regular.woff2
+               ├── 霞鹜文楷Code-Regular.woff2
                ├── HarmonyOS_Sans.woff2
                ├── HarmonyOS_Sans_Medium.woff2
                ├── HarmonyOS_Sans_Regular.woff2
-               ├── Lora-Bold.woff2
-               ├── Lora-Regular.woff2
-               ├── Lucida-Sans-Typewriter-Regular.woff2
-               └── RobotoMono-Regular.woff2
+               ├── 霞鹜文楷.woff2
+               ├── 霞鹜文楷.woff2
+               ├── 霞鹜文楷-Sans-Typewriter-Regular.woff2
+               └── 霞鹜文楷-Regular.woff2
           ├── Iconfont
                ├── iconfont.woff2
                ├── iconfont1.woff2
                ├── its.woff
                └── remixicon.woff2
           └── Simplify-Fonts
-              └── 三极古拙楷书简.woff2
+              └── 霞鹜文楷.woff2
      └── Images
          ├── Background
               ├── bg1.jpg
