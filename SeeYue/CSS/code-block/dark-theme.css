@@ -1,9 +1,3 @@
-/* 暗黑模式下代码块语法高亮主题 */
-/* Based on arcticicestudio"s Nord theme */
-/* https://github.com/arcticicestudio/nord */
-/* ================================================================= */
-
-
 .cm-s-inner.CodeMirror {
     /* background: #2e3440; */
     color: #d8dee9;
