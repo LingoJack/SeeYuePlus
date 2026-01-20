@@ -1,5 +1,5 @@
 /* 本文件为链接 hover 样式 —— 块底纹 */
-/* 链接长度不要跨行 */
+/* 支持跨行链接 */
 /* 来源 https://hexo.theme.oranges.zcheng.site/css-animation-design.html */
 /* ================================================================= */
 
@@ -9,24 +9,21 @@ span:is([md-inline="link"], [md-inline="url"]) {
 }
 
 span:is([md-inline="link"], [md-inline="url"]).md-link {
-    z-index: 1;
-}
-
-span:is([md-inline="link"], [md-inline="url"]).md-link::after {
-    content: "";
-    position: absolute;
-    top: -1px;
-    bottom: -2px;
-    left: -2px;
-    right: -3px;
-    transition: transform .3s linear;
+    /* 使用 box-decoration-break 确保跨行时每行都有背景 */
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    /* 使用 background 实现块底纹，支持跨行 */
     background: linear-gradient(var(--hover-link-bg-top-color), var(--hover-link-bg-bottom-color));
-    transform: scaleY(0);
-    transform-origin: bottom;
-    z-index: -1;
+    background-size: 100% 0%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: background-size .3s linear;
+    /* 添加内边距使背景更美观 */
+    padding: 1px 2px;
+    margin: -1px -2px;
     border-radius: 2px;
 }
 
-span:is([md-inline="link"], [md-inline="url"]).md-link:hover::after {
-    transform: scaleY(1);
+span:is([md-inline="link"], [md-inline="url"]).md-link:hover {
+    background-size: 100% 100%;
 }
