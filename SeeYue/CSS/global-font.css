@@ -13,42 +13,42 @@
 /* 全局中文字体 */
 @font-face {
   font-family : "Global_CN_Font";
-  src         : url("../Fonts/Chinese-Fonts/LXGWWenKaiScreen.woff2");
+  src         : url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2");
   font-display: swap;
 }
 
 /* 标题、加粗 */
 @font-face {
   font-family : "HarmonyOS-Bold";
-  src         : url("../Fonts/Chinese-Fonts/HarmonyOS_Sans_SC_Bold.woff2");
+  src         : url("../Fonts/common-fonts/HarmonyOS_Sans_SC_Bold.woff2");
   font-display: swap;
 }
 
 /* 斜体、列表符号 */
 @font-face {
   font-family : "HarmonyOS-Regular";
-  src         : url("../Fonts/Chinese-Fonts/HarmonyOS_Sans_SC_Regular.woff2");
+  src         : url("../Fonts/common-fonts/HarmonyOS_Sans_SC_Regular.woff2");
   font-display: swap;
 }
 
 /* 字体图标 */
 @font-face {
   font-family : "iconfont";
-  src         : url("../Fonts/Iconfont/iconfont.woff2") format("truetype");
+  src         : url("../Fonts/icon_font/iconfont.woff2") format("truetype");
   font-display: swap;
 }
 
 /* 链接尾部图标 */
 @font-face {
   font-family : "ITS";
-  src         : url("../Fonts/Iconfont/its.woff");
+  src         : url("../Fonts/icon_font/its.woff");
   font-display: swap;
 }
 
 /* H1 → H6 标题等级提示符号 */
 @font-face {
   font-family : "remixicon";
-  src         : url("../Fonts/Iconfont/remixicon.woff2") format("truetype");
+  src         : url("../Fonts/icon_font/remixicon.woff2") format("truetype");
   font-display: swap;
 }
 
