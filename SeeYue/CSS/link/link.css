@@ -16,7 +16,6 @@ a {
   transition   : all var(--link-animation-time) ease;
   position     : relative;
   font-size    : var(--link-text-size);
-  border-bottom: 1.5px solid transparent;
 }
 
 #write a {
