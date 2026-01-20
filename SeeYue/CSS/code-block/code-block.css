@@ -25,9 +25,9 @@
 
 /* 代码行 */
 #write .CodeMirror-wrap .CodeMirror-code pre {
-    margin-right: 10px;
+    margin-right: 0;
     padding-left: 10px;
-    padding-right: 0 !important;
+    padding-right: 10px !important;
     font-family: var(--code-block-text-font);
     font-size: var(--code-block-text-size);
     /* 使得鼠标悬浮在滚轮上的样式与悬浮在其他地方的不同 */
@@ -121,9 +121,8 @@
 
 /* 以下代码只在 Typora 界面生效 */
 @media screen {
-    /* 代码块行横向滚轮 */
+    /* 代码块行不换行显示 */
     #write pre.md-fences .CodeMirror-wrap .CodeMirror-code pre {
-        overflow-x: var(--code-block-lines-horizontal-overflow-x) !important;
         white-space: var(--code-block-lines-horizontal-white-space) !important;
     }
 
@@ -132,12 +131,13 @@
         position: relative;
         max-height: var(--code-block-max-height) !important;
         overflow-y: auto;
+        overflow-x: auto;
         cursor: auto !important;
-        overflow-x: hidden !important;
     }
 
     /* 修复代码块高度未达到要求，仍出现垂直滚动条（使用行号时） */
     .CodeMirror-sizer {
         margin-bottom: 0 !important;
+        padding-right: 10px !important;
     }
 }
