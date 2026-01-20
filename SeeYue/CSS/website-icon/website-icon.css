@@ -16,13 +16,13 @@ attribute*=value       匹配属性值中包含指定值的每个元素。
 
 
 #write a[href*="http"]::before {
-  display          : var(--link-head-icon-state);
-  position         : relative;
-  top              : 5px;
-  background-repeat: no-repeat;
-  background-size  : var(--link-head-icon-size);
-  width            : var(--link-head-icon-size);
-  height           : var(--link-head-icon-size);
-  margin-right     : 4px;
-  border-radius    : 4px;
+    display: var(--link-head-icon-state);
+    position: relative;
+    top: 5px;
+    background-repeat: no-repeat;
+    background-size: var(--link-head-icon-size);
+    width: var(--link-head-icon-size);
+    height: var(--link-head-icon-size);
+    margin-right: 4px;
+    border-radius: 4px;
 }
