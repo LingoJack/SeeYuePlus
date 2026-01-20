@@ -640,8 +640,8 @@
     /* 代码块最大高度，用于代码块滚动显示，开启 —— 50vh，关闭 —— initial */
     --code-block-max-height: 50vh;
     /* 是否开启代码块任意行横向滚动，是 —— pre，否 —— normal  */
-    --code-block-lines-horizontal-white-space: normal;
-    --code-block-lines-horizontal-overflow-x: auto;
+--code-block-lines-horizontal-white-space: pre;
+--code-block-lines-horizontal-overflow-x: auto;
 
     /* ======================== 代码块顶栏（top-bar.css） ======================== */
     /* 代码块顶栏，border-top 实现 */
