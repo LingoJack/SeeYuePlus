@@ -59,12 +59,12 @@
 
 /* css属性值，布尔值等等 */
 .cm-s-inner .cm-atom {
-    color: #f77669;
+    color: #a626a4;  /* JSON 布尔值/null：紫色，突出特殊值 */
 }
 
 /* 数字 */
 .cm-s-inner .cm-number {
-    color: #b4654d;
+    color: #c18401;  /* JSON 数字：橙色，与字符串区分明显 */
 }
 
 /* 变量名 */
@@ -104,12 +104,12 @@
 
 /* 属性 */
 .cm-s-inner .cm-attribute {
-    color: #ffcb6b;
+    color: #0184bc;  /* JSON 属性名：清晰的蓝色，提升可读性 */
 }
 
 /* 被调用的方法 */
 .cm-s-inner .cm-property {
-    color: #005cc5;
+    color: #0184bc;  /* JSON 属性名：清晰的蓝色，与方法名统一 */
 }
 
 /* css class */
@@ -143,7 +143,7 @@
 }
 
 .cm-s-inner .cm-string {
-    color: #a31515;
+    color: #50a14f;  /* JSON 字符串值：柔和的绿色，视觉更舒适 */
 }
 
 .md-fences .code-tooltip {

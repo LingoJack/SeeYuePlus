@@ -4,7 +4,7 @@
 
 /* 代码块整体 */
 #write .md-fences {
-    font-family: var(--code-block-text-font);
+    font-family: var(--code-block-text-font), serif;
     margin: 1.5rem 0;
     padding: 5px 0 !important;
     line-height: var(--code-block-text-line-height);
