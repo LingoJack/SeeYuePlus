@@ -6,7 +6,7 @@
 /* 目录中文 */
 @font-face {
   font-family : "玄宋45S";
-  src         : url("../Fonts/Chinese-Fonts/HYXuanSong45S.woff2");
+  src         : url("../Fonts/Chinese-Fonts/LXGWWenKaiScreen.woff2");
   font-display: swap;
 }
 
@@ -20,14 +20,14 @@
 /* 标题、加粗 */
 @font-face {
   font-family : "HarmonyOS-Bold";
-  src         : url("../Fonts/Chinese-Fonts/HarmonyOS_Sans_SC_Bold.woff2");
+  src         : url("../Fonts/Chinese-Fonts/LXGWWenKaiScreen.woff2");
   font-display: swap;
 }
 
 /* 正文中文 */
 @font-face {
   font-family : "HarmonyOS-Regular";
-  src         : url("../Fonts/Chinese-Fonts/HarmonyOS_Sans_SC_Regular.woff2");
+  src         : url("../Fonts/Chinese-Fonts/LXGWWenKaiScreen.woff2");
   font-display: swap;
 }
 
@@ -106,7 +106,7 @@
 
 /* 下面是图标名 */
 .iconfont {
-  font-family            : "iconfont" !important;
+  font-family: "iconfont", serif !important;
   font-size              : 16px;
   font-style             : normal;
   -webkit-font-smoothing : antialiased;
