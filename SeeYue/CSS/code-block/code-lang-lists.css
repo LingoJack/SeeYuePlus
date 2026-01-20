@@ -99,7 +99,8 @@ pre[lang="crystal"]:after {
     content: "Crystal";
 }
 
-pre[lang="css"]:after {
+pre[lang="css"]:after,
+pre[lang="CSS"]:after {
     content: "CSS";
 }
 
@@ -128,7 +129,9 @@ pre[lang="django"]:after {
     content: "Django";
 }
 
-pre[lang="Dockerfile"]:after {
+pre[lang="Dockerfile"]:after,
+pre[lang="dockerfile"]:after,
+pre[lang="docker"]:after {
     content: "Dockerfile";
 }
 
@@ -200,7 +203,9 @@ pre[lang="glsl"]:after {
     content: "GLSL";
 }
 
-pre[lang="Go"]:after {
+pre[lang="Go"]:after,
+pre[lang="go"]:after,
+pre[lang="golang"]:after {
     content: "Go";
 }
 
@@ -229,7 +234,8 @@ pre[lang="Htaccess"]:after {
     content: "Htaccess";
 }
 
-pre[lang="HTML"]:after {
+pre[lang="HTML"]:after,
+pre[lang="html"]:after {
     content: "HTML";
 }
 
@@ -255,12 +261,15 @@ pre[lang="Jade"]:after {
     content: "Jade";
 }
 
-pre[lang="Java"]:after {
+pre[lang="Java"]:after,
+pre[lang="java"]:after {
     content: "Java";
 }
 
 pre[lang="JavaScript"]:after,
-pre[lang="JS"]:after {
+pre[lang="javascript"]:after,
+pre[lang="JS"]:after,
+pre[lang="js"]:after {
     content: "JavaScript";
 }
 
@@ -268,7 +277,8 @@ pre[lang="Jinja2"]:after {
     content: "Jinja2";
 }
 
-pre[lang="JSON"]:after {
+pre[lang="JSON"]:after,
+pre[lang="json"]:after {
     content: "JSON";
 }
 
@@ -276,7 +286,8 @@ pre[lang="JSP"]:after {
     content: "JSP";
 }
 
-pre[lang="JSX"]:after {
+pre[lang="JSX"]:after,
+pre[lang="jsx"]:after {
     content: "JSX";
 }
 
@@ -285,7 +296,8 @@ pre[lang="Julia"]:after {
 }
 
 /* ———————————————————— K ———————————————————— */
-pre[lang="Kotlin"]:after {
+pre[lang="Kotlin"]:after,
+pre[lang="kotlin"]:after {
     content: "Kotlin";
 }
 
@@ -319,7 +331,9 @@ pre[lang="MariaDB"]:after {
     content: "MariaDB";
 }
 
-pre[lang="Markdown"]:after {
+pre[lang="Markdown"]:after,
+pre[lang="markdown"]:after,
+pre[lang="md"]:after {
     content: "Markdown";
 }
 
@@ -396,7 +410,8 @@ pre[lang="PGP"]:after {
     content: "PGP";
 }
 
-pre[lang="PHP"]:after {
+pre[lang="PHP"]:after,
+pre[lang="php"]:after {
     content: "PHP";
 }
 
@@ -432,7 +447,8 @@ pre[lang="pug"]:after {
     content: "Pug";
 }
 
-pre[lang="Python"]:after {
+pre[lang="Python"]:after,
+pre[lang="python"]:after {
     content: "Python";
 }
 
@@ -455,11 +471,13 @@ pre[lang="rst"]:after {
     content: "reStructuredText";
 }
 
-pre[lang="Ruby"]:after {
+pre[lang="Ruby"]:after,
+pre[lang="ruby"]:after {
     content: "Ruby";
 }
 
-pre[lang="Rust"]:after {
+pre[lang="Rust"]:after,
+pre[lang="rust"]:after {
     content: "Rust";
 }
 
@@ -509,7 +527,8 @@ pre[lang="Spreadsheet"]:after {
     content: "Spreadsheet";
 }
 
-pre[lang="SQL"]:after {
+pre[lang="SQL"]:after,
+pre[lang="sql"]:after {
     content: "SQL";
 }
 
@@ -529,7 +548,8 @@ pre[lang="Stylus"]:after {
     content: "Stylus";
 }
 
-pre[lang="Swift"]:after {
+pre[lang="Swift"]:after,
+pre[lang="swift"]:after {
     content: "Swift";
 }
 
@@ -558,7 +578,8 @@ pre[lang="TOML"]:after {
     content: "TOML";
 }
 
-pre[lang="TSX"]:after {
+pre[lang="TSX"]:after,
+pre[lang="tsx"]:after {
     content: "TSX";
 }
 
@@ -571,7 +592,9 @@ pre[lang="Twig"]:after {
 }
 
 pre[lang="TypeScript"]:after,
-pre[lang="TS"]:after {
+pre[lang="typescript"]:after,
+pre[lang="TS"]:after,
+pre[lang="ts"]:after {
     content: "TypeScript";
 }
 
@@ -607,7 +630,8 @@ pre[lang="visual basic"]:after {
     content: "Visual Basic";
 }
 
-pre[lang="Vue"]:after {
+pre[lang="Vue"]:after,
+pre[lang="vue"]:after {
     content: "Vue";
 }
 
@@ -625,7 +649,8 @@ pre[lang="XAML"]:after {
     content: "XAML";
 }
 
-pre[lang="XML"]:after {
+pre[lang="XML"]:after,
+pre[lang="xml"]:after {
     content: "XML";
 }
 
@@ -642,7 +667,9 @@ pre[lang="Yacas"]:after {
     content: "Yacas";
 }
 
-pre[lang="YAML"]:after {
+pre[lang="YAML"]:after,
+pre[lang="yaml"]:after,
+pre[lang="yml"]:after {
     content: "YAML";
 }
 

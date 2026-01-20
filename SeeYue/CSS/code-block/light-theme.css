@@ -67,6 +67,17 @@
     color: #c18401;  /* JSON 数字：橙色，与字符串区分明显 */
 }
 
+/* 针对 JSON 模式的特定样式 */
+.md-fences.md-fences-advanced.md-focus .cm-s-inner .cm-atom,
+.md-fences .cm-s-inner .cm-atom {
+    color: #a626a4 !important;  /* JSON 布尔值/null */
+}
+
+.md-fences.md-fences-advanced.md-focus .cm-s-inner .cm-number,
+.md-fences .cm-s-inner .cm-number {
+    color: #c18401 !important;  /* JSON 数字 */
+}
+
 /* 变量名 */
 .cm-s-inner .cm-def {
     color: #74531f;
@@ -112,6 +123,14 @@
     color: #0184bc;  /* JSON 属性名：清晰的蓝色，与方法名统一 */
 }
 
+/* 针对 JSON 模式的属性名 */
+.md-fences.md-fences-advanced.md-focus .cm-s-inner .cm-attribute,
+.md-fences .cm-s-inner .cm-attribute,
+.md-fences.md-fences-advanced.md-focus .cm-s-inner .cm-property,
+.md-fences .cm-s-inner .cm-property {
+    color: #0184bc !important;  /* JSON 属性名 */
+}
+
 /* css class */
 .cm-s-inner .cm-qualifier {
     color: #f2ae49;
@@ -144,6 +163,22 @@
 
 .cm-s-inner .cm-string {
     color: #50a14f;  /* JSON 字符串值：柔和的绿色，视觉更舒适 */
+}
+
+/* 针对 JSON 模式的字符串 */
+.md-fences.md-fences-advanced.md-focus .cm-s-inner .cm-string,
+.md-fences .cm-s-inner .cm-string {
+    color: #50a14f !important;  /* JSON 字符串值 */
+}
+
+/* JSON 括号 */
+.cm-s-inner .cm-bracket {
+    color: #383a42;  /* JSON 括号：深灰色，清晰可见 */
+}
+
+.md-fences.md-fences-advanced.md-focus .cm-s-inner .cm-bracket,
+.md-fences .cm-s-inner .cm-bracket {
+    color: #383a42 !important;  /* JSON 括号 */
 }
 
 .md-fences .code-tooltip {
