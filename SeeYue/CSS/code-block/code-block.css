@@ -116,11 +116,11 @@
 /* 以下代码只在 Typora 界面生效 */
 @media screen {
 
-  /* 光标所在行背景色 */
+  /* 光标所在行背景色 - 已禁用 */
   /* .md-fences.md-focus .cm-s-inner .CodeMirror-activeline-background, */
-  .md-fences.md-focus .CodeMirror-code>div.CodeMirror-activeline {
-    background: var(--focus-code-line-bg-color);
-  }
+  /* .md-fences.md-focus .CodeMirror-code>div.CodeMirror-activeline { */
+  /*   background: var(--focus-code-line-bg-color); */
+  /* } */
 
   /* 代码块行横向滚轮 */
   #write pre.md-fences .CodeMirror-wrap .CodeMirror-code pre {
