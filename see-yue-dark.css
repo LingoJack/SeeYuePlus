@@ -40,8 +40,8 @@
 /* 12.1 宽度自适应 + 滚动显示 */
 @import "./SeeYue/CSS/table/auto-scroll.css";
 
-/* 12.2 全宽 + 滚动显示 */
-/* @import "./SeeYue/CSS/table/full-scroll.css"; */
+ /*12.2 全宽 + 滚动显示 */
+ @import "./SeeYue/CSS/table/full-scroll.css";
 
 /* 13 引用块样式 */
 @import "./SeeYue/CSS/blockquote.css";
