@@ -35,7 +35,7 @@
     /* 界面写作区域文本对齐方式，justify —— 两端对齐，initial —— 默认值，应该是左对齐 */
     --writeArea-text-align-style: initial;
     /* 界面写作区域默认宽度 */
-    --writeArea-default-width: 1000px;
+    --writeArea-default-width: 1200px;
     /* 界面写作区域选中文本颜色 */
     --writeArea-selected-text-color: #eceff4;
     /* 界面写作区域选中文本背景颜色 */
