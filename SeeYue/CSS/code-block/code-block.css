@@ -28,7 +28,7 @@
     margin-right: 0;
     padding-left: 10px;
     padding-right: 10px !important;
-    font-family: var(--code-block-text-font);
+    font-family: var(--code-block-text-font), serif;
     font-size: var(--code-block-text-size);
     /* 使得鼠标悬浮在滚轮上的样式与悬浮在其他地方的不同 */
     cursor: auto;
