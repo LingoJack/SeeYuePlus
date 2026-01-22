@@ -134,6 +134,28 @@
     /* margin-left: calc(-49vw + 50%); */
 }
 
+/* mermaid 图表容器 - 限制缩放范围仅在代码块内 */
+#write .md-fences.md-fences-advanced.md-focus .md-diagram-panel {
+    transform-origin: center center;
+    overflow: auto;
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+/* mermaid 图表 - 防止放大时影响整个页面 */
+#write .md-fences[lang="mermaid"] .md-diagram-panel-preview,
+#write .md-fences[lang="mermaid"] .md-diagram-panel {
+    display: block;
+    overflow: auto;
+    max-width: 100%;
+}
+
+/* mermaid 图表内容区域 */
+#write .md-fences[lang="mermaid"] svg {
+    max-width: 100%;
+    height: auto;
+}
+
 /* 分隔线 */
 hr {
     height: var(--writeArea-divider-height);
