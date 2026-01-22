@@ -156,6 +156,106 @@
     height: auto;
 }
 
+/* mermaid 图表暗色主题样式 */
+#write .md-fences[lang="mermaid"] svg .edgePath .path,
+#write .md-fences[lang="mermaid"] svg .flowchart-link {
+    stroke: #88c0d0 !important;
+    stroke-width: 2px !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .edgeLabel {
+    background-color: #3b4252 !important;
+    color: #eceff4 !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .nodeLabel,
+#write .md-fences[lang="mermaid"] svg .label {
+    color: #eceff4 !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .node rect,
+#write .md-fences[lang="mermaid"] svg .node circle,
+#write .md-fences[lang="mermaid"] svg .node ellipse,
+#write .md-fences[lang="mermaid"] svg .node polygon {
+    fill: #434c5e !important;
+    stroke: #81a1c1 !important;
+    stroke-width: 2px !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .cluster rect {
+    fill: #2e3440 !important;
+    stroke: #5e81ac !important;
+    stroke-width: 1px !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .arrowheadPath {
+    fill: #88c0d0 !important;
+    stroke: #88c0d0 !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .marker {
+    fill: #88c0d0 !important;
+    stroke: #88c0d0 !important;
+}
+
+/* 序列图样式 */
+#write .md-fences[lang="mermaid"] svg .actor {
+    fill: #434c5e !important;
+    stroke: #81a1c1 !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .actor-line {
+    stroke: #5e81ac !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .messageLine0,
+#write .md-fences[lang="mermaid"] svg .messageLine1 {
+    stroke: #88c0d0 !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .messageText {
+    fill: #eceff4 !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .labelText {
+    fill: #eceff4 !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .loopText,
+#write .md-fences[lang="mermaid"] svg .loopLine {
+    fill: #eceff4 !important;
+    stroke: #81a1c1 !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .note {
+    fill: #3b4252 !important;
+    stroke: #d08770 !important;
+}
+
+/* 甘特图样式 */
+#write .md-fences[lang="mermaid"] svg .grid .tick line {
+    stroke: #4c566a !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .grid .tick text {
+    fill: #d8dee9 !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .taskText {
+    fill: #eceff4 !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .taskTextOutsideRight,
+#write .md-fences[lang="mermaid"] svg .taskTextOutsideLeft {
+    fill: #eceff4 !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .section0,
+#write .md-fences[lang="mermaid"] svg .section1,
+#write .md-fences[lang="mermaid"] svg .section2 {
+    fill: #5e81ac !important;
+}
+
 /* 分隔线 */
 hr {
     height: var(--writeArea-divider-height);
