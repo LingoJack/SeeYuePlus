@@ -30,6 +30,20 @@
     color: var(--all-input-box-prompt-text-color) !important;
 }
 
+/* 侧边栏文件重命名输入框文本颜色 */
+#file-library-tree .file-node-input,
+#file-library-list .file-list-item input {
+    color: var(--sidebar-text-color) !important;
+    background-color: var(--sidebar-whole-bg-color) !important;
+}
+
+/* 侧边栏文件重命名输入框焦点状态文本颜色 */
+#file-library-tree .file-node-input:focus,
+#file-library-list .file-list-item input:focus {
+    color: var(--sidebar-text-color) !important;
+    background-color: var(--sidebar-whole-bg-color) !important;
+}
+
 /* ———————————————————————————— 公式块、HTML 块 ———————————————————————————— */
 /* HTML 块（编辑状态） */
 .md-rawblock-control:not(.md-rawblock-tooltip) {
