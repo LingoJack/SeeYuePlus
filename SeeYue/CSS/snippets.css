@@ -182,6 +182,16 @@
     color: #eceff4 !important;
 }
 
+#write .md-fences[lang="mermaid"] svg .edgeLabel rect {
+    fill: #3b4252 !important;
+}
+
+#write .md-fences[lang="mermaid"] svg .edgeLabel span,
+#write .md-fences[lang="mermaid"] svg .edgeLabel div {
+    background-color: #3b4252 !important;
+    color: #eceff4 !important;
+}
+
 #write .md-fences[lang="mermaid"] svg .nodeLabel,
 #write .md-fences[lang="mermaid"] svg .label {
     color: #eceff4 !important;
