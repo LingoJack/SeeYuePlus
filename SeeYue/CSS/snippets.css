@@ -177,19 +177,29 @@
     stroke-width: 2px !important;
 }
 
-#write .md-fences[lang="mermaid"] svg .edgeLabel {
-    background-color: #3b4252 !important;
-    color: #eceff4 !important;
+/* 增强 Mermaid edgeLabel 样式 - 修复看不清的问题 */
+#write .md-fences[lang="mermaid"] .edgeLabel {
+    background-color: transparent !important;
 }
 
-#write .md-fences[lang="mermaid"] svg .edgeLabel rect {
+/* 背景矩形 */
+#write .md-fences[lang="mermaid"] .edgeLabel rect {
     fill: #3b4252 !important;
+    stroke: #3b4252 !important;
 }
 
-#write .md-fences[lang="mermaid"] svg .edgeLabel span,
-#write .md-fences[lang="mermaid"] svg .edgeLabel div {
+/* 文本容器及内容 */
+#write .md-fences[lang="mermaid"] .edgeLabel foreignObject,
+#write .md-fences[lang="mermaid"] .edgeLabel span,
+#write .md-fences[lang="mermaid"] .edgeLabel div,
+#write .md-fences[lang="mermaid"] .edgeLabel p {
     background-color: #3b4252 !important;
     color: #eceff4 !important;
+}
+
+/* 纯 SVG 文本 */
+#write .md-fences[lang="mermaid"] .edgeLabel text {
+    fill: #eceff4 !important;
 }
 
 #write .md-fences[lang="mermaid"] svg .nodeLabel,
