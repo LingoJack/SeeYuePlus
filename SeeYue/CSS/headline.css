@@ -80,7 +80,7 @@ h1 a {
 }
 
 /* 二级标题样式一 */
-#write h2 {
+/* #write h2 {
     position: relative;
 }
 
@@ -101,6 +101,21 @@ h1 a {
     position: absolute;
     bottom: 0;
     left: 0.5px;
+} */
+
+/* 二级标题样式三（简洁风格：无背景，仅底部下划线） */
+#write h2 {
+    position: relative;
+    padding-bottom: var(--h2-text-bottom-line-distance);
+    border-bottom: none;
+    margin-bottom: 1rem;
+    color: var(--h2-color);
+}
+
+#write h2 span {
+    color: inherit;
+    background: none;
+    padding: 0;
 }
 
 /* 二级标题样式二 */
