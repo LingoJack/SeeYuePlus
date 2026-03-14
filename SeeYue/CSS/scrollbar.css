@@ -124,20 +124,10 @@ div.sidebar-content-content::-webkit-scrollbar-thumb:hover,
 }
 
 /* ————————————————————————— 表格 ————————————————————————— */
-/* 全宽 full-scroll.css */
-figure > table tbody::-webkit-scrollbar {
-    width: var(--table-scroll-thumb-width) !important;
-}
+/* 注意：auto-scroll.css 和 full-scroll.css 不应同时使用 */
+/* 当前仅保留 auto-scroll 模式的 figure 滚动条样式 */
 
-figure > table tbody::-webkit-scrollbar-thumb {
-    background: var(--table-scroll-thumb-color);
-}
-
-figure > table tbody::-webkit-scrollbar-thumb:hover {
-    background: var(--hover-table-scroll-thumb-color) !important;
-}
-
-/* 宽度自适应 auto-scroll.css */
+/* auto-scroll.css 模式 - figure 滚动 */
 /* 纵向滚动条 */
 figure::-webkit-scrollbar,
     /* 横向滚动条 */

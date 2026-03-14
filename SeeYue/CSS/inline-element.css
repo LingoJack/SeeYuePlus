@@ -37,6 +37,7 @@
 
 /* 行间代码 */
 #write :is(code, tt) {
+    display: inline;
     margin: 0 2px;
     padding: 2px 5px 2px;
     font-family: var(--line-code-font);
@@ -44,13 +45,20 @@
     background-color: var(--line-code-bg-color);
     border-radius: var(--line-code-bg-radius);
     font-size: var(--line-code-size);
+    line-height: normal;
+    vertical-align: baseline;
 }
 
 #write blockquote code {
     background-color: var(--blockquote-line-code-bg-color);
 }
 
-#write table code {
+/* 表格中的行内代码特殊处理，防止换行重叠 */
+#write table :is(code, tt) {
+    display: inline-block;
+    line-height: 1.4;
+    vertical-align: middle;
+    margin: 1px 2px;
     background-color: var(--table-line-code-bg-color);
 }
 
