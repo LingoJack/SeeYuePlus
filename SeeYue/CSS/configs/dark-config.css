@@ -702,6 +702,8 @@
     --image-max-width: 85%;
     /* 图片圆角 */
     --image-radius: 4px;
+    /* 图片边框 */
+    --image-border: 1.5px solid #333;
     /* 图片阴影 */
     --image-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     /* 图片变暗程度，0 ~ 100% */

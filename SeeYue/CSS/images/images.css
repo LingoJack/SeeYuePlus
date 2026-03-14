@@ -4,7 +4,7 @@
 
 img {
     border-radius: var(--image-radius);
-    border: none;
+    border: var(--image-border);
     transition: all .4s ease;
     /* 设置最大宽度 */
     max-width: var(--image-max-width);
