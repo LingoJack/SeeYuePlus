@@ -371,28 +371,27 @@
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━ 表格样式（table.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
 :root {
     /* ======================== 基本设置 ======================== */
-    /* 表格最大高度 */
-    /* css布局单位详解 https://juejin.cn/post/6859282467535519752 */
-    --table-max-height: 50vh;
+    /* 表格最大高度，none 表示不限制 */
+    --table-max-height: none;
     /* 表格是否水平居中（使用 auto-scroll.css），auto —— 开启，inherit —— 关闭 */
-    --table-horizontal-center: inherit;
+    --table-horizontal-center: auto;
     /* 表格最小宽度（使用 auto-scroll.css） */
     --table-min-width: 50%;
     /* 表格背景色 */
-    --table-bg-color: #20232b;
+    --table-bg-color: #2e3440;
     /* 表格背景圆角 */
-    --table-bg-radius: 4px;
+    --table-bg-radius: 8px;
     /* 表格单元格内边距 */
-    --table-all-cell-padding: 6px 12px;
+    --table-all-cell-padding: 10px 16px;
     /* 表格表体奇数行背景色 */
-    --table-tbody-oddNum-line-bg-color: #4c566a;
+    --table-tbody-oddNum-line-bg-color: transparent;
     /* 表格表体偶数行背景色 */
-    --table-tbody-evenNum-line-bg-color: #373e4c;
+    --table-tbody-evenNum-line-bg-color: rgba(255, 255, 255, 0.02);
 
     /* 表格单元格边框 */
-    --table-all-cell-border: 1.5px solid #ddd;
+    --table-all-cell-border: 1px solid rgba(255, 255, 255, 0.1);
     /* 表格表头行下边框 */
-    --table-thead-line-bottom-border: 2.5px solid #ccc;
+    --table-thead-line-bottom-border: 2px solid #5e81ac;
     /* 表格第一列左边框 */
     --table-first-col-cell-left-border: none;
     /* 表格最后一列右边框 */
@@ -402,19 +401,19 @@
     /* 表格最后一行下边框 */
     --table-last-row-cell-bottom-border: none;
     /* 表格阴影模拟外边框 */
-    --table-outer-border-shadow: none;
+    --table-outer-border-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 
     /* 使用 full-scroll.css，表格单元格最小宽度失效 */
     /* 使用 auto-scroll.css，表格单元格最小宽度有效，当表格列数过多，会出现底部滚动条 */
     /* 表格单元格最小宽度，不需要 —— auto，需要 —— 输入具体数值 */
-    --table-cell-min-width: 120px;
+    --table-cell-min-width: auto;
 
     /* 表头字体 */
     --table-thead-text-font: "霞鹜文楷";
     /* 表头字体颜色 */
-    --table-thead-text-color: rgba(255, 255, 255, .9);
+    --table-thead-text-color: #eceff4;
     /* 表头背景色 */
-    --table-thead-bg-color: #21252d;
+    --table-thead-bg-color: #3b4252;
 
     /* 光标定位在任一单元格上，该单元格是否显示下划线，inline-block —— 显示，none —— 隐藏 */
     --focus-table-td-bottom-line-state: inline-block;
@@ -1354,9 +1353,9 @@
     --hover--spell-check-panel-lang-list-scroll-box-color: rgba(255, 255, 255, 0.3);
 
     /* ======================== 表格 ======================== */
-    --table-scroll-thumb-width: 5px;
+    --table-scroll-thumb-width: 8px;
     /* 表格底部横向滚动块高度 */
-    --table-bottom-scroll-thumb-height: 5px;
-    --table-scroll-thumb-color: rgba(255, 255, 255, 0.5);
-    --hover-table-scroll-thumb-color: rgba(255, 255, 255, 0.3);
+    --table-bottom-scroll-thumb-height: 8px;
+    --table-scroll-thumb-color: rgba(255, 255, 255, 0.4);
+    --hover-table-scroll-thumb-color: rgba(255, 255, 255, 0.6);
 }

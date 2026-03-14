@@ -33,7 +33,7 @@ table tr {
 /* 表头 */
 table tr th {
     border: var(--table-all-cell-border);
-    padding: var(--table-all-cell-padding) !important;
+    padding: var(--table-all-cell-padding);
     color: var(--table-thead-text-color) !important;
     font-family: var(--table-thead-text-font);
     background: var(--table-thead-bg-color) !important;
