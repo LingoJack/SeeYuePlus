@@ -6,25 +6,25 @@ html {
     background-color: var(--frosted-glass-interface-bg-color);
 }
 
+/* 全局背景 */
 html {
-    /* 全局背景图片 */
-    background-image: var(--frosted-glass-interface-bg-img) !important;
+    /* 背景图片或渐变 */
+    background: var(--frosted-glass-interface-bg-img) !important;
+    background-color: var(--frosted-glass-interface-bg-color) !important;
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    /* background        : no-repeat center/cover var(--interface-default-bg-img) rgba(255, 255, 255, 0.4) fixed; */
 }
 
 /* 全局背景色 */
-/* #typora-sidebar, */
 content,
 .on-focus-mode content {
-    background-color: var(--interface-bg-color) !important;
+    background-color: transparent !important;
 }
 
 #typora-sidebar {
-    background-color: var(--interface-bg-color) !important;
+    background-color: transparent !important;
 }
 
 /* 去除源代码模式下，使用背景图带来的顶部白边 */
@@ -33,14 +33,48 @@ content,
     bottom: 0;
 }
 
-/* 毛玻璃效果 */
-#typora-sidebar,
-#write,
-    /* 源代码模式 */
-#typora-source .CodeMirror-lines {
+/* 毛玻璃效果 - 写作区域 */
+#write {
     position: relative;
-    /* 文字区域透明度 */
     background: var(--frosted-glass-writeArea-bg-color);
     backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
+    -webkit-backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
     box-shadow: var(--frosted-glass-writeArea-shadow);
+    border-radius: var(--frosted-glass-writeArea-border-radius);
+    border: var(--frosted-glass-writeArea-border);
+}
+
+/* 毛玻璃效果 - 侧边栏 */
+#typora-sidebar {
+    backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
+    -webkit-backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
+    background: var(--frosted-glass-sidebar-bg-color, rgba(219, 227, 227, 0.7));
+}
+
+/* 毛玻璃效果 - 源代码模式 */
+#typora-source .CodeMirror-lines {
+    position: relative;
+    background: var(--frosted-glass-writeArea-bg-color);
+    backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
+    -webkit-backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
+    box-shadow: var(--frosted-glass-writeArea-shadow);
+    border-radius: var(--frosted-glass-writeArea-border-radius);
+}
+
+/* 右键菜单毛玻璃 */
+#context-menu {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+/* 搜索面板毛玻璃 */
+#file-library-search-panel {
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+/* 底部栏毛玻璃 */
+footer.ty-footer {
+    backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
+    -webkit-backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
 }

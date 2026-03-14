@@ -29,13 +29,13 @@
     /* 界面写作区域文本大小 */
     --writeArea-text-size: 16px;
     /* 界面写作区域文本行间距 */
-    --writeArea-text-line-spacing: 1.6rem;
+    --writeArea-text-line-spacing: 1.8rem;
     /* 界面写作区域文本段间距，用 margin-bottom 实现*/
     --writeArea-text-paragraph-spacing: 1.2rem;
     /* 界面写作区域文本对齐方式，justify —— 两端对齐，initial —— 默认值，应该是左对齐 */
     --writeArea-text-align-style: initial;
     /* 界面写作区域默认宽度 */
-    --writeArea-default-width: 1200px;
+    --writeArea-default-width: 860px;
     /* 界面写作区域选中文本颜色 */
     --writeArea-selected-text-color: #fff;
     /* 界面写作区域选中文本背景颜色 */
@@ -92,13 +92,19 @@
     /* 用于保证全屏背景 */
     --frosted-glass-interface-bg-color: #ffffff00;
     /* 背景图片路径，路径是相对于 frosted-glass.css 文件 */
-    --frosted-glass-interface-bg-img: url("../Images/Background/light-1.jpg");
+    /* 默认使用渐变背景，如需使用图片，请取消下方注释并注释掉渐变背景 */
+    /* --frosted-glass-interface-bg-img: url("../Images/Background/light-1.jpg"); */
+    --frosted-glass-interface-bg-img: linear-gradient(135deg, #e0e5ec 0%, #d4e0e8 25%, #e8eff0 50%, #dce8e4 75%, #e5eaec 100%);
     /* 背景图片模糊度 */
     --frosted-glass-interface-bg-img-blur: 40px;
     /* 写作区域背景透明度，范围 0 ~ 1，数字越小，透明度越高 */
-    --frosted-glass-writeArea-bg-color: rgba(255, 255, 255, 0.4);
+    --frosted-glass-writeArea-bg-color: rgba(255, 255, 255, 0.6);
     /* 开启毛玻璃效果的写作区域阴影 */
-    --frosted-glass-writeArea-shadow: 0 4px 12px rgba(120, 120, 120, 0.35);
+    --frosted-glass-writeArea-shadow: 0 8px 32px rgba(120, 120, 120, 0.2);
+    /* 写作区域边框圆角 */
+    --frosted-glass-writeArea-border-radius: 16px;
+    /* 写作区域边框 */
+    --frosted-glass-writeArea-border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━ 正文标题（headline.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
@@ -236,7 +242,7 @@
     /* 表格，行内代码背景色 */
     --table-line-code-bg-color: #f5f7f9;
     /* 行内代码背景圆角 */
-    --line-code-bg-radius: 3px;
+    --line-code-bg-radius: 6px;
 
     /* 高亮 */
     /* 高亮文本背景色，类似马克笔涂抹效果 */
@@ -591,7 +597,7 @@
 :root {
     /* ======================== 基本设置（code-block.css） ======================== */
     /* 代码块字体 */
-    --code-block-text-font: Consolas, Monaco, "霞鹜文楷";
+    --code-block-text-font: Monaco, "PingFang SC", Consolas;
     /* 代码块文本大小 */
     --code-block-text-size: calc(var(--writeArea-text-size) - 1px);
     /* 代码块文本行高 */

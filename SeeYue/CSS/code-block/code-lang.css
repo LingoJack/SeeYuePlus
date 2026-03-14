@@ -16,7 +16,7 @@
 }
 
 #write pre.md-fences {
-    padding: 15px 0 !important;
+    /* padding 由 code-block.css 控制，这里不再覆盖 */
 }
 
 .md-fences + .md-fences {

@@ -29,7 +29,7 @@
     /* 界面写作区域文本大小 */
     --writeArea-text-size: 16px;
     /* 界面写作区域文本行间距 */
-    --writeArea-text-line-spacing: 1.6rem;
+    --writeArea-text-line-spacing: 1.8rem;
     /* 界面写作区域文本段间距，用 margin-bottom 实现*/
     --writeArea-text-paragraph-spacing: 1.2rem;
     /* 界面写作区域文本对齐方式，justify —— 两端对齐，initial —— 默认值，应该是左对齐 */
@@ -236,7 +236,7 @@
     /* 表格，行内代码背景色 */
     --table-line-code-bg-color: #424a57;
     /* 行内代码背景圆角 */
-    --line-code-bg-radius: 3px;
+    --line-code-bg-radius: 6px;
 
     /* 高亮 */
     /* 高亮文本背景色，类似马克笔涂抹效果 */
@@ -591,7 +591,7 @@
 :root {
     /* ======================== 基本设置（code-block.css） ======================== */
     /* 代码块字体 */
-    --code-block-text-font: Consolas, Monaco, "霞鹜文楷";
+    --code-block-text-font: Monaco, "PingFang SC", Consolas;
     /* 代码块文本大小 */
     --code-block-text-size: calc(var(--writeArea-text-size) - 1px);
     /* 代码块文本行高 */

@@ -38,7 +38,7 @@
 /* 行间代码 */
 #write :is(code, tt) {
     margin: 0 2px;
-    padding: 1.5px 3px 0px;
+    padding: 2px 5px 2px;
     font-family: var(--line-code-font);
     color: var(--line-code-color);
     background-color: var(--line-code-bg-color);
