@@ -35,7 +35,7 @@
     /* 界面写作区域文本对齐方式，justify —— 两端对齐，initial —— 默认值，应该是左对齐 */
     --writeArea-text-align-style: initial;
     /* 界面写作区域默认宽度 */
-    --writeArea-default-width: 1200px;
+    --writeArea-default-width: 860px;
     /* 界面写作区域选中文本颜色 */
     --writeArea-selected-text-color: #fff;
     /* 界面写作区域选中文本背景颜色 */
@@ -90,15 +90,26 @@
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━ 毛玻璃效果（frosted-glass.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
 :root {
     /* 用于保证全屏背景 */
-    --frosted-glass-interface-bg-color: #ffffff00;
+    --frosted-glass-interface-bg-color: #f0f4f8;
     /* 背景图片路径，路径是相对于 frosted-glass.css 文件 */
-    --frosted-glass-interface-bg-img: url("../Images/Background/light-1.jpg");
+    /* 默认使用有限范围的渐变背景，如需使用图片，请取消下方注释并注释掉渐变背景 */
+    /* --frosted-glass-interface-bg-img: url("../Images/Background/light-1.jpg"); */
+    --frosted-glass-interface-bg-img: radial-gradient(1200px circle at 20% 15%, rgba(94, 129, 172, 0.12), transparent 50%),
+        radial-gradient(1000px circle at 80% 20%, rgba(129, 178, 154, 0.08), transparent 45%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.8), transparent 400px),
+        linear-gradient(135deg, #f0f4f8, #d9e2ec, #f0f4f8);
     /* 背景图片模糊度 */
     --frosted-glass-interface-bg-img-blur: 40px;
     /* 写作区域背景透明度，范围 0 ~ 1，数字越小，透明度越高 */
-    --frosted-glass-writeArea-bg-color: rgba(255, 255, 255, 0.4);
+    --frosted-glass-writeArea-bg-color: rgba(255, 255, 255, 0.6);
     /* 开启毛玻璃效果的写作区域阴影 */
-    --frosted-glass-writeArea-shadow: 0 4px 12px rgba(120, 120, 120, 0.35);
+    --frosted-glass-writeArea-shadow: 0 8px 32px rgba(100, 110, 120, 0.12);
+    /* 写作区域边框圆角 */
+    --frosted-glass-writeArea-border-radius: 16px;
+    /* 写作区域边框 */
+    --frosted-glass-writeArea-border: 1px solid rgba(255, 255, 255, 0.5);
+    /* 侧边栏背景透明度 */
+    --frosted-glass-sidebar-bg-color: rgba(255, 255, 255, 0.6);
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━ 正文标题（headline.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */

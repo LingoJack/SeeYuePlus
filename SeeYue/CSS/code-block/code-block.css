@@ -22,7 +22,7 @@
     color: var(--code-block-text-color, var(--writeArea-text-color));
     border: 1px solid rgba(129, 178, 154, 0.18);
     border-radius: 16px;
-    padding: 3.8em 1.8em 1.4em !important;
+    padding: 2.8em 1.4em 1.2em !important;
     margin: 2em 0;
     overflow: auto;
     box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);

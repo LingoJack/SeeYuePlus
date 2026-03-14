@@ -9,7 +9,7 @@ html {
 /* 全局背景 */
 html {
     /* 背景图片或渐变 */
-    background: var(--frosted-glass-interface-bg-img) !important;
+    background: var(--frosted-glass-interface-bg-img, var(--frosted-glass-interface-bg-color)) !important;
     background-color: var(--frosted-glass-interface-bg-color) !important;
     background-size: cover !important;
     background-repeat: no-repeat;
@@ -40,15 +40,17 @@ content,
     backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
     -webkit-backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
     box-shadow: var(--frosted-glass-writeArea-shadow);
-    border-radius: var(--frosted-glass-writeArea-border-radius);
-    border: var(--frosted-glass-writeArea-border);
+    border-radius: var(--frosted-glass-writeArea-border-radius, 0);
+    border: var(--frosted-glass-writeArea-border, none);
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
 }
 
 /* 毛玻璃效果 - 侧边栏 */
 #typora-sidebar {
     backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
     -webkit-backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
-    background: var(--frosted-glass-sidebar-bg-color, rgba(219, 227, 227, 0.7));
+    background: var(--frosted-glass-sidebar-bg-color, var(--frosted-glass-writeArea-bg-color));
 }
 
 /* 毛玻璃效果 - 源代码模式 */
@@ -58,7 +60,8 @@ content,
     backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
     -webkit-backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
     box-shadow: var(--frosted-glass-writeArea-shadow);
-    border-radius: var(--frosted-glass-writeArea-border-radius);
+    border-radius: var(--frosted-glass-writeArea-border-radius, 0);
+    margin-top: 24px !important;
 }
 
 /* 右键菜单毛玻璃 */
