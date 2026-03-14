@@ -691,9 +691,9 @@
     /* 代码块右侧编程语言文本大小 */
     --code-block-right-program-lang-text-size: 11px;
     /* 代码块右侧编程语言文本上下位置，top 实现 */
-    --code-block-right-program-lang-top-position: 0;
+    --code-block-right-program-lang-top-position: 6px;
     /* 代码块右侧编程语言文本左右位置，right 实现 */
-    --code-block-right-program-lang-right-position: 3px;
+    --code-block-right-program-lang-right-position: 12px;
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━ 图片样式（images.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */
