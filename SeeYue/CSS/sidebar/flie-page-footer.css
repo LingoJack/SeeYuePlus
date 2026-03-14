@@ -92,15 +92,18 @@
 /* ———————————————————————————————————— 弹出菜单 ———————————————————————————————————— */
 /* 文件页底部栏更多菜单 */
 #ty-sidebar-footer #sidebar-files-menu {
-    background: inherit !important;
+    background: rgba(255, 255, 255, 0.92) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     padding: 5px 8px;
     border: none;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 15%);
+    border-radius: 8px;
 }
 
 #sidebar-files-menu.dropdown-menu > li > a {
     font-family: var(--sidebar-text-font) !important;
-    color: var(--sidebar-text-color) !important;
+    color: #222 !important;
     transition: all .3s ease;
 }
 
@@ -121,7 +124,7 @@
 #ty-sidebar-footer #sidebar-files-menu li:nth-child(7) > span:first-child,
     /* 「最近使用的目录」文字 */
 #ty-sidebar-footer #sidebar-files-menu li:nth-child(8) > span:first-child {
-    color: var(--footer-files-menu-tips-line-text-color);
+    color: #555;
     font-family: "霞鹜文楷";
 }
 
