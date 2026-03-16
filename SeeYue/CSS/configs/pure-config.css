@@ -85,6 +85,20 @@
     --hover-math-html-block-bg-color: #f3f3f3;
     /* 鼠标悬浮在公式块、HTML 工具栏右侧按钮上，其背景色 */
     --hover-math-html-block-tooltip-btn-bg-color: #eee;
+
+    /* ======================== YAML Front Matter ======================== */
+    /* YAML Front Matter 文本颜色 */
+    --yaml-front-matter-text-color: #7b8a99;
+    /* YAML Front Matter 文本大小 */
+    --yaml-front-matter-text-size: 0.9em;
+    /* YAML Front Matter 背景色 */
+    --yaml-front-matter-bg-color: #f7f8fa;
+    /* YAML Front Matter 边框 */
+    --yaml-front-matter-border: 1px solid rgba(94, 129, 172, 0.2);
+    /* YAML Front Matter 背景圆角 */
+    --yaml-front-matter-border-radius: 8px;
+    /* YAML Front Matter 分隔线颜色 */
+    --yaml-front-matter-delimiter-color: #b0bec5;
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━ 毛玻璃效果（frosted-glass.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */

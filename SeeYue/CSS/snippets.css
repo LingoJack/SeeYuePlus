@@ -44,6 +44,27 @@
     background-color: var(--sidebar-whole-bg-color) !important;
 }
 
+/* ———————————————————————————— YAML Front Matter ———————————————————————————— */
+/* YAML Front Matter 整体容器 */
+pre.md-meta-block {
+    font-family: var(--code-block-text-font), monospace;
+    font-size: var(--yaml-front-matter-text-size, 0.9em);
+    color: var(--yaml-front-matter-text-color);
+    background-color: var(--yaml-front-matter-bg-color);
+    border: var(--yaml-front-matter-border);
+    border-radius: var(--yaml-front-matter-border-radius, 8px);
+    padding: 1em 1.2em;
+    margin-bottom: 2em;
+    line-height: 1.6;
+    overflow: auto;
+}
+
+/* YAML Front Matter 分隔线 (---) */
+pre.md-meta-block::before,
+pre.md-meta-block::after {
+    color: var(--yaml-front-matter-delimiter-color);
+}
+
 /* ———————————————————————————— 公式块、HTML 块 ———————————————————————————— */
 /* HTML 块（编辑状态） */
 .md-rawblock-control:not(.md-rawblock-tooltip) {
