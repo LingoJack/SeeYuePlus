@@ -7,11 +7,11 @@
     font-family: "霞鹜文楷";
     /* 优先使用系统已安装的字体，常见的字体名称变体 */
     src: local("霞鹜文楷"),
-         local("LXGW WenKai Screen"),
-         local("LXGWWenKaiScreen"),
-         local("霞鹜文楷屏幕阅读版"),
-         /* 如果系统没有安装，才加载本地字体文件 */
-         url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2") format("woff2");
+     local("LXGW WenKai Screen"),
+     local("LXGWWenKaiScreen"),
+     local("霞鹜文楷屏幕阅读版"),
+     /* 如果系统没有安装，才加载本地字体文件 */
+     url("../Fonts/common-fonts/LXGWWenKaiScreen.woff2") format("woff2");
     font-display: swap; /* 使用系统字体先渲染，字体加载完成后再替换 */
 }
 

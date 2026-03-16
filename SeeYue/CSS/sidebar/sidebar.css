@@ -68,7 +68,7 @@
 }
 
 #file-library-tree .file-node-content .file-node-title {
-    /* width           : calc(var(--sidebar-width) - 70px); */
+    /* width       : calc(var(--sidebar-width) - 70px); */
     width: var(--filetree-all-filename-width) !important;
 }
 

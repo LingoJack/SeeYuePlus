@@ -76,76 +76,76 @@
 @keyframes blink-bg {
 
     0% {
-        background-color: var(--highlight-active-headline-bg-color);
-        opacity: 0;
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity: 0;
     }
 
     20% {
-        background-color: var(--highlight-active-headline-bg-color);
-        opacity: 0.5;
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity: 0.5;
     }
 
     40% {
-        background-color: var(--highlight-active-headline-bg-color);
-        opacity: 0.8;
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity: 0.8;
     }
 
     50% {
-        background-color: var(--highlight-active-headline-bg-color);
-        opacity: 1;
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity: 1;
     }
 
     60% {
-        background-color: var(--highlight-active-headline-bg-color);
-        opacity: 0.8;
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity: 0.8;
     }
 
     80% {
-        background-color: var(--highlight-active-headline-bg-color);
-        opacity: 0.5;
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity: 0.5;
     }
 
     100% {
-        background-color: var(--highlight-active-headline-bg-color);
-        opacity: 0;
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity: 0;
     }
 }
 
 @-webkit-keyframes blink-bg {
 
     0% {
-        background-color: var(--highlight-active-headline-bg-color);
-        opacity: 0;
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity: 0;
     }
 
     20% {
-        background-color: var(--highlight-active-headline-bg-color);
-        opacity: 0.5;
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity: 0.5;
     }
 
     40% {
-        background-color: var(--highlight-active-headline-bg-color);
-        opacity: 0.8;
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity: 0.8;
     }
 
     50% {
-        background-color: var(--highlight-active-headline-bg-color);
-        opacity: 1;
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity: 1;
     }
 
     60% {
-        background-color: var(--highlight-active-headline-bg-color);
-        opacity: 0.8;
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity: 0.8;
     }
 
     80% {
-        background-color: var(--highlight-active-headline-bg-color);
-        opacity: 0.5;
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity: 0.5;
     }
 
     100% {
-        background-color: var(--highlight-active-headline-bg-color);
-        opacity: 0;
+    background-color: var(--highlight-active-headline-bg-color);
+    opacity: 0;
     }
 }
 

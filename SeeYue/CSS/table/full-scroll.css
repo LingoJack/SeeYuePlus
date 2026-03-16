@@ -13,25 +13,25 @@
 /* —————————————————— 以下代码为固定表头、滚动显示代码 —————————————————— */
 @media screen {
     figure > table tr {
-        display: table;
-        width: 100%;
-        table-layout: fixed;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
     }
 
     figure > table tbody {
-        max-height: var(--table-max-height);
-        cursor: auto !important;
-        overflow-y: overlay !important;
-        display: inline-block;
+    max-height: var(--table-max-height);
+    cursor: auto !important;
+    overflow-y: overlay !important;
+    display: inline-block;
     }
 
     figure > table thead th {
-        position: sticky !important;
-        top: 0;
-        z-index: 10;
+    position: sticky !important;
+    top: 0;
+    z-index: 10;
     }
 
     figure > table tbody tr td {
-        border-bottom: none !important;
+    border-bottom: none !important;
     }
 }

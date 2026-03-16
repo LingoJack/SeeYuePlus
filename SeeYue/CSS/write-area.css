@@ -24,6 +24,8 @@ body {
     margin: 0 auto;
     padding: 20px 52px 100px;
     transform: none;
+    tab-size: 4;
+    -moz-tab-size: 4;
 }
 
 /* 源代码模式 */

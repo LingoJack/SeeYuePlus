@@ -126,11 +126,11 @@ h1 a {
 }
 
 #write h2 span {
-  background             : #ef7060;
-  padding                : 3px 5px 1px;
+  background     : #ef7060;
+  padding    : 3px 5px 1px;
   border-top-right-radius: 3px;
   border-top-left-radius : 3px;
-  margin-right           : 3px;
+  margin-right       : 3px;
 }
 
 #write h2:after {

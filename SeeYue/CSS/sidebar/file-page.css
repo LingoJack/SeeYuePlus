@@ -308,10 +308,10 @@
 } */
 
 /* #file-library #file-library-tree .file-tree-node.file-node-collapsed {
-  display           : grid;
+  display       : grid;
   grid-template-rows: 0fr;
-  transition        : 0.3s;
-  overflow          : hidden;
+  transition    : 0.3s;
+  overflow      : hidden;
 
 }
 

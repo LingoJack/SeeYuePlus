@@ -70,8 +70,8 @@
     border-radius: 50%;
     background: var(--code-block-topBar-left-redDot-color, #ff5f5a);
     box-shadow:
-        18px 0 0 var(--code-block-topBar-left-yellowDot-color, #ffbe2e),
-        36px 0 0 var(--code-block-topBar-left-greenDot-color, #2aca44);
+    18px 0 0 var(--code-block-topBar-left-yellowDot-color, #ffbe2e),
+    36px 0 0 var(--code-block-topBar-left-greenDot-color, #2aca44);
     z-index: 2;
 }
 

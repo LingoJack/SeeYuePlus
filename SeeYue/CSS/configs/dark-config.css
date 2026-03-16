@@ -95,9 +95,9 @@
     /* 默认使用有限范围的渐变背景，如需使用图片，请取消下方注释并注释掉渐变背景 */
     /* --frosted-glass-interface-bg-img: url("../Images/Background/night-1.jpg"); */
     --frosted-glass-interface-bg-img: radial-gradient(1200px circle at 20% 15%, rgba(94, 129, 172, 0.15), transparent 50%),
-        radial-gradient(1000px circle at 80% 20%, rgba(163, 190, 140, 0.1), transparent 45%),
-        linear-gradient(180deg, rgba(46, 52, 64, 0.9), transparent 400px),
-        linear-gradient(135deg, #1a1d24, #2e3440, #1a1d24);
+    radial-gradient(1000px circle at 80% 20%, rgba(163, 190, 140, 0.1), transparent 45%),
+    linear-gradient(180deg, rgba(46, 52, 64, 0.9), transparent 400px),
+    linear-gradient(135deg, #1a1d24, #2e3440, #1a1d24);
     /* 背景图片模糊度 */
     --frosted-glass-interface-bg-img-blur: 40px;
     /* 写作区域背景透明度，范围 0 ~ 1，数字越小，透明度越高 */

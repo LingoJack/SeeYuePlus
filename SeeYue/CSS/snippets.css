@@ -320,7 +320,7 @@ hr {
 #md-notification,
 .modal-content {
     border-radius: 8px;
-    /* width           : 62%; */
+    /* width       : 62%; */
     background-color: var(--pop-up-menu-bg-color);
     color: var(--pop-up-menu-text-color);
     border: none;
