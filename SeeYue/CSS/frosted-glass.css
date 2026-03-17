@@ -1,4 +1,4 @@
-/* 本文件为界面毛玻璃效果设置 */
+/* 本文件为界面液态玻璃效果设置 */
 /* ================================================================= */
 
 
@@ -33,12 +33,12 @@ content,
     bottom: 0;
 }
 
-/* 毛玻璃效果 - 写作区域 */
+/* ======================== 液态玻璃 - 写作区域 ======================== */
 #write {
     position: relative;
     background: var(--frosted-glass-writeArea-bg-color);
-    backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
-    -webkit-backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
+    backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur)) saturate(var(--liquid-glass-saturate, 180%));
+    -webkit-backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur)) saturate(var(--liquid-glass-saturate, 180%));
     box-shadow: var(--frosted-glass-writeArea-shadow);
     border-radius: var(--frosted-glass-writeArea-border-radius, 0);
     border: var(--frosted-glass-writeArea-border, none);
@@ -46,38 +46,66 @@ content,
     margin-bottom: 24px !important;
 }
 
-/* 毛玻璃效果 - 侧边栏 */
-#typora-sidebar {
-    backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
-    -webkit-backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
-    background: var(--frosted-glass-sidebar-bg-color, var(--frosted-glass-writeArea-bg-color));
+/* 液态玻璃 - 写作区域顶部高光（模拟光线折射） */
+#write::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: var(--frosted-glass-writeArea-border-radius, 0);
+    /* 顶部和左侧亮边 + 底部和右侧暗边 = 玻璃折射感 */
+    box-shadow:
+        inset 0 1px 0 0 var(--liquid-glass-highlight, rgba(255, 255, 255, 0.25)),
+        inset 1px 0 0 0 var(--liquid-glass-highlight-side, rgba(255, 255, 255, 0.1)),
+        inset 0 -1px 0 0 var(--liquid-glass-shadow-inner, rgba(0, 0, 0, 0.05)),
+        inset -1px 0 0 0 var(--liquid-glass-shadow-inner, rgba(0, 0, 0, 0.03));
+    pointer-events: none;
+    z-index: 999;
 }
 
-/* 毛玻璃效果 - 源代码模式 */
+/* ======================== 液态玻璃 - 侧边栏 ======================== */
+#typora-sidebar {
+    backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur)) saturate(var(--liquid-glass-saturate, 180%));
+    -webkit-backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur)) saturate(var(--liquid-glass-saturate, 180%));
+    background: var(--frosted-glass-sidebar-bg-color, var(--frosted-glass-writeArea-bg-color));
+    /* 侧边栏右侧分隔高光线 */
+    border-right: 1px solid var(--liquid-glass-highlight-side, rgba(255, 255, 255, 0.1));
+}
+
+/* ======================== 液态玻璃 - 源代码模式 ======================== */
 #typora-source .CodeMirror-lines {
     position: relative;
     background: var(--frosted-glass-writeArea-bg-color);
-    backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
-    -webkit-backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
+    backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur)) saturate(var(--liquid-glass-saturate, 180%));
+    -webkit-backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur)) saturate(var(--liquid-glass-saturate, 180%));
     box-shadow: var(--frosted-glass-writeArea-shadow);
     border-radius: var(--frosted-glass-writeArea-border-radius, 0);
     margin-top: 24px !important;
 }
 
-/* 右键菜单毛玻璃 */
+/* ======================== 液态玻璃 - 右键菜单 ======================== */
 #context-menu {
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(40px) saturate(var(--liquid-glass-saturate, 180%));
+    -webkit-backdrop-filter: blur(40px) saturate(var(--liquid-glass-saturate, 180%));
+    border-radius: 12px;
+    box-shadow:
+        0 8px 32px var(--liquid-glass-menu-shadow, rgba(0, 0, 0, 0.15)),
+        inset 0 1px 0 0 var(--liquid-glass-highlight, rgba(255, 255, 255, 0.25)),
+        inset 0 -0.5px 0 0 var(--liquid-glass-shadow-inner, rgba(0, 0, 0, 0.05));
 }
 
-/* 搜索面板毛玻璃 */
+/* ======================== 液态玻璃 - 搜索面板 ======================== */
 #file-library-search-panel {
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(30px) saturate(var(--liquid-glass-saturate, 180%));
+    -webkit-backdrop-filter: blur(30px) saturate(var(--liquid-glass-saturate, 180%));
 }
 
-/* 底部栏毛玻璃 */
+/* ======================== 液态玻璃 - 底部栏 ======================== */
 footer.ty-footer {
-    backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
-    -webkit-backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur));
+    backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur)) saturate(var(--liquid-glass-saturate, 180%));
+    -webkit-backdrop-filter: blur(var(--frosted-glass-interface-bg-img-blur)) saturate(var(--liquid-glass-saturate, 180%));
+    /* 顶部分隔高光线 */
+    border-top: 1px solid var(--liquid-glass-highlight-side, rgba(255, 255, 255, 0.1));
 }

@@ -114,15 +114,21 @@
     linear-gradient(180deg, rgba(235, 242, 232, 0.4) 0%, transparent 50%),
     linear-gradient(135deg, #dce5d8, #d5dfcf, #e2ead8, #d8e2d2, #dce5d8);
     /* 背景图片模糊度 */
-    --frosted-glass-interface-bg-img-blur: 40px;
+    --frosted-glass-interface-bg-img-blur: 48px;
     /* 写作区域背景透明度，范围 0 ~ 1，数字越小，透明度越高 */
-    --frosted-glass-writeArea-bg-color: rgba(240, 245, 235, 0.7);
+    --frosted-glass-writeArea-bg-color: rgba(240, 245, 235, 0.48);
     /* 开启毛玻璃效果的写作区域阴影 */
-    --frosted-glass-writeArea-shadow: 0 8px 32px rgba(120, 120, 120, 0.2);
+    --frosted-glass-writeArea-shadow: 0 4px 24px rgba(100, 120, 100, 0.1), 0 12px 48px rgba(100, 120, 100, 0.08);
     /* 写作区域边框圆角 */
     --frosted-glass-writeArea-border-radius: 16px;
     /* 写作区域边框 */
-    --frosted-glass-writeArea-border: 1px solid rgba(255, 255, 255, 0.3);
+    --frosted-glass-writeArea-border: 1px solid rgba(255, 255, 255, 0.4);
+    /* ---- 液态玻璃参数 ---- */
+    --liquid-glass-saturate: 190%;
+    --liquid-glass-highlight: rgba(255, 255, 255, 0.45);
+    --liquid-glass-highlight-side: rgba(255, 255, 255, 0.25);
+    --liquid-glass-shadow-inner: rgba(0, 0, 0, 0.04);
+    --liquid-glass-menu-shadow: rgba(0, 0, 0, 0.1);
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━ 正文标题（headline.css） ━━━━━━━━━━━━━━━━━━━━━━━━━ */

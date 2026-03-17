@@ -61,27 +61,29 @@
     -webkit-text-fill-color: #000 !important;
 }
 
-/* ==================== 底部栏毛玻璃 ==================== */
+/* ==================== 底部栏液态玻璃 ==================== */
 footer.ty-footer {
-    background: rgba(255, 255, 255, 0.65) !important;
+    background: rgba(255, 255, 255, 0.4) !important;
 }
 
-/* ==================== 弹出菜单毛玻璃 ==================== */
+/* ==================== 弹出菜单液态玻璃 ==================== */
 .ty-popup,
 .modal-dialog {
-    background: rgba(255, 255, 255, 0.85) !important;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(40px) saturate(200%);
+    -webkit-backdrop-filter: blur(40px) saturate(200%);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(100, 110, 140, 0.12), inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
 }
 
-/* ==================== 右键菜单增强 ==================== */
+/* ==================== 右键菜单液态玻璃 ==================== */
 #context-menu {
-    background: rgba(255, 255, 255, 0.85) !important;
+    background: rgba(255, 255, 255, 0.45) !important;
 }
 
-/* ==================== 搜索面板毛玻璃 ==================== */
+/* ==================== 搜索面板液态玻璃 ==================== */
 #file-library-search-panel {
-    background: rgba(255, 255, 255, 0.8) !important;
+    background: rgba(255, 255, 255, 0.45) !important;
 }
 
 /* ==================== 编辑区网格线效果 ==================== */
