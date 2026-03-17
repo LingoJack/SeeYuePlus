@@ -108,7 +108,11 @@
     /* 背景图片路径，路径是相对于 frosted-glass.css 文件 */
     /* 默认使用渐变背景，如需使用图片，请取消下方注释并注释掉渐变背景 */
     /* --frosted-glass-interface-bg-img: url("../Images/Background/light-1.jpg"); */
-    --frosted-glass-interface-bg-img: linear-gradient(135deg, #e0e5ec 0%, #d4e0e8 25%, #e8eff0 50%, #dce8e4 75%, #e5eaec 100%);
+    --frosted-glass-interface-bg-img: radial-gradient(ellipse 1800px 1200px at 20% 15%, rgba(160, 190, 180, 0.08), transparent 70%),
+    radial-gradient(ellipse 1600px 1000px at 80% 20%, rgba(140, 170, 190, 0.06), transparent 65%),
+    radial-gradient(ellipse 1400px 900px at 50% 75%, rgba(170, 185, 170, 0.05), transparent 60%),
+    linear-gradient(180deg, rgba(240, 245, 240, 0.4) 0%, transparent 50%),
+    linear-gradient(135deg, #e0e5ec, #d8e2e8, #e8eff0, #dce8e4, #e0e5ec);
     /* 背景图片模糊度 */
     --frosted-glass-interface-bg-img-blur: 40px;
     /* 写作区域背景透明度，范围 0 ~ 1，数字越小，透明度越高 */
