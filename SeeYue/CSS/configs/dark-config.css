@@ -332,10 +332,25 @@
     /* 缩进距离：所在层级 × 输入值 */
     --orderly-list-level-indentation: 25px;
 
-    /* 有序列表前符号颜色 */
-    --orderly-list-symbol-color: rgba(163, 190, 140, .8);
+    /* 有序列表前符号颜色（同时作为徽章背景色） */
+    --orderly-list-symbol-color: rgba(156, 181, 162, .85);
     /* 有序列表前符号大小 */
     --orderly-list-symbol-size: inherit;
+
+    /* ---- 有序列表圆形徽章参数 ---- */
+    /* 一级徽章：大小、背景、文字色、阴影 */
+    --ol-badge-size: 16px;
+    --ol-badge-bg: rgba(156, 181, 162, .85);
+    --ol-badge-text-color: #1a1d24;
+    --ol-badge-font-size: 10px;
+    --ol-badge-shadow: rgba(0, 0, 0, 0.25);
+    /* 二级徽章 */
+    --ol-badge-size-l2: 14px;
+    --ol-badge-bg-l2: rgba(156, 181, 162, .7);
+    --ol-badge-opacity-l2: 0.65;
+    --ol-badge-font-size-l2: 9px;
+    /* 三级纯数字 */
+    --ol-badge-font-size-l3: 11px;
 
     /* 是否开启有序列表层级线，block —— 开启，none —— 关闭 */
     --orderly-list-level-line-state: block;

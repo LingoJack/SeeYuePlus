@@ -23,24 +23,106 @@ blockquote :is(ol, ul) li p {
 }
 
 /* —————————————————————————————————— 有序列表 —————————————————————————————————— */
+
+/* 隐藏原生序号，使用 counter + ::before 圆形徽章替代 */
 #write ol {
-    list-style: var(--level-1-orderly-list-symbol-style);
+    list-style: none !important;
     padding-left: var(--orderly-list-level-indentation);
+    counter-reset: ol-counter;
 }
 
 #write ol ol {
-    list-style-type: var(--level-2-orderly-list-symbol-style);
+    list-style: none !important;
+    counter-reset: ol-counter-l2;
 }
 
 #write ol ol ol {
-    list-style-type: var(--level-more-orderly-list-symbol-style);
+    list-style: none !important;
+    counter-reset: ol-counter-l3;
 }
 
-/* 有序列表前符号 */
-#write ol li::marker {
-    font-family: "PingFang SC";
-    font-size: var(--orderly-list-symbol-size);
+/* ——— 一级有序列表：圆形色底徽章 ——— */
+#write ol > li {
+    counter-increment: ol-counter;
+    position: relative;
+}
+
+#write ol > li::before {
+    content: counter(ol-counter);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -26px;
+    top: calc(var(--writeArea-text-line-spacing, 1.8rem) / 2 - var(--ol-badge-size, 16px) / 2);
+    width: var(--ol-badge-size, 16px);
+    height: var(--ol-badge-size, 16px);
+    border-radius: 50%;
+    background: var(--ol-badge-bg, var(--orderly-list-symbol-color));
+    color: var(--ol-badge-text-color, #fff);
+    font-size: var(--ol-badge-font-size, 10px);
+    font-family: "PingFang SC", system-ui, sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    box-shadow: 0 1px 2px var(--ol-badge-shadow, rgba(0, 0, 0, 0.15));
+}
+
+/* ——— 二级有序列表：小号半透明圆 ——— */
+#write ol ol > li {
+    counter-increment: ol-counter-l2;
+    position: relative;
+}
+
+#write ol ol > li::before {
+    content: counter(ol-counter-l2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -24px;
+    top: calc(var(--writeArea-text-line-spacing, 1.8rem) / 2 - var(--ol-badge-size-l2, 14px) / 2);
+    width: var(--ol-badge-size-l2, 14px);
+    height: var(--ol-badge-size-l2, 14px);
+    border-radius: 50%;
+    background: var(--ol-badge-bg-l2, var(--orderly-list-symbol-color));
+    opacity: var(--ol-badge-opacity-l2, 0.65);
+    color: var(--ol-badge-text-color, #fff);
+    font-size: var(--ol-badge-font-size-l2, 9px);
+    font-family: "PingFang SC", system-ui, sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    box-shadow: none;
+}
+
+/* ——— 三级及更深有序列表：纯色小数字（无色底） ——— */
+#write ol ol ol > li {
+    counter-increment: ol-counter-l3;
+    position: relative;
+}
+
+#write ol ol ol > li::before {
+    content: counter(ol-counter-l3);
+    display: inline-block;
+    position: absolute;
+    left: -22px;
+    top: 0;
+    height: var(--writeArea-text-line-spacing, 1.8rem);
+    line-height: var(--writeArea-text-line-spacing, 1.8rem);
+    width: auto;
+    border-radius: 0;
+    background: none;
+    opacity: 1;
     color: var(--orderly-list-symbol-color);
+    font-size: var(--ol-badge-font-size-l3, 11px);
+    font-family: "PingFang SC", system-ui, sans-serif;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+/* 隐藏原生 ::marker 避免重复显示 */
+#write ol li::marker {
+    color: transparent;
+    font-size: 0;
 }
 
 /* —————————————————— 有序列表层级竖线 —————————————————— */
@@ -180,7 +262,30 @@ blockquote ul li.md-task-list-item.task-list-done {
 }
 
 /* 光标所在列表的符号样式 */
-li.md-focus-container::marker,
+li.md-focus-container::marker {
+    color: transparent !important;
+}
+
+/* 有序列表：光标所在行，徽章高亮 */
+#write ol > li.md-focus-container::before {
+    background: var(--focus-list-symbol-color) !important;
+    color: #fff !important;
+    transition: all .3s ease;
+}
+
+#write ol ol > li.md-focus-container::before {
+    background: var(--focus-list-symbol-color) !important;
+    color: #fff !important;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+#write ol ol ol > li.md-focus-container::before {
+    color: var(--focus-list-symbol-color) !important;
+    transition: all .3s ease;
+}
+
+/* 无序列表：光标所在行 */
 li.md-focus-container::before {
     color: var(--focus-list-symbol-color) !important;
     transition: all .3s ease;
