@@ -133,11 +133,11 @@
     --all-headline-font: "霞鹜文楷";
 
     /* 标题文本颜色 */
-    --h1-color: #d08770;
-    --h2-color: #88C0D0;
-    --h3-h4-color: #a3be8c !important;
-    --h5-color: rgba(163, 190, 140, .7);
-    --h6-color: rgba(163, 190, 140, .5);
+    --h1-color: #d4a574;
+    --h2-color: #7fb8c9;
+    --h3-h4-color: #9cb5a2 !important;
+    --h5-color: rgba(156, 181, 162, .65);
+    --h6-color: rgba(156, 181, 162, .42);
 
     /* 标题文本大小 */
     --h1-size: 2rem;
@@ -150,11 +150,11 @@
     /* 标题文本字距 */
     --headline-text-letter-space: 2px;
     /* 二级标题文本背景颜色 */
-    --h2-text-bg-color: linear-gradient(to bottom, #5e81ac, rgba(94, 129, 172, .6));
+    --h2-text-bg-color: linear-gradient(to bottom, #5c8fa0, rgba(92, 143, 160, .55));
     /* 二级标题文本背景圆角 */
     --h2-text-bg-radius: 5px;
     /* 二级标题底部边框颜色 */
-    --h2-bottom-border-color: #5e81ac;
+    --h2-bottom-border-color: #5c8fa0;
     /* 二级标题底部横线高度 */
     --h2-bottom-border-height: 4px;
     /* 标题文本与底部边框间距 */
